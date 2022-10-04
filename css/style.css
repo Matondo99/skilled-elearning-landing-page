@@ -1,0 +1,283 @@
+:root {
+  --clr-neutral-100: #FFFFFF;
+  --clr-neutral-200: #83869A;
+  --clr-neutral-300: #13183F;
+  --clr-accent-100: #FFA7C3;
+  --clr-accent-200: #F74780;
+  --clr-accent-300: #666CA3;
+
+  --clr-grade-101: #4851FF;
+  --clr-grade-502: hsl(13, 100%, 64%);
+  --clr-grade-901: hsl(322, 87%, 55%);
+
+  --ff-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --fs-XL: 40px;
+  --fs-M: 24px;
+  --fs-S: 20px;
+  --fs-general: 16px;
+  --fs-link: 18px;
+
+
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+.flexer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flowise>*+* {
+  margin-top: 2em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-sans);
+  font-size: var(--fs-general);
+  font-weight: var(--fw-500);
+  color: var(--clr-neutral-200);
+  line-height: 1.5;
+}
+
+/*=============== Typography ===============*/
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-800);
+}
+
+h1,
+h3 {
+  color: var(--clr-neutral-300);
+}
+
+h1 {
+  font-size: var(--fs-XL);
+  max-width: 15ch;
+}
+
+h2 {
+  font-size: var(--fs-M);
+  color: var(--clr-neutral-100);
+}
+
+h3 {
+  font-size: var(--fs-S);
+}
+
+/*================= components =============*/
+
+.starter {
+  text-decoration: none;
+  font-weight: var(--fw-700);
+  display: inline-block;
+}
+
+.btn {
+  color: var(--clr-neutral-100);
+  font-size: inherit;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255, .0);
+  transition: background-color 300ms ease-out 100ms;
+}
+
+.btn:focus::before,
+.btn:hover::before  {
+  background-color: rgba(255,255,255, 0.42);
+}
+
+.btn-nav {
+  background-color: var(--clr-neutral-300);
+  padding: .65em 1.75em;
+}
+
+.btn-hero {
+  background-image: linear-gradient(to bottom, var(--clr-grade-502), var(--clr-grade-901));
+  padding: 1em 2.25em;
+}
+
+.btn-foot {
+  background-image: linear-gradient(to bottom, var(--clr-grade-101), var(--clr-grade-901));
+  padding: .65em 1.75em;
+}
+
+.link {
+  font-size: var(--fs-link);
+  color: var(--clr-accent-200);
+}
+
+.link:focus,
+.link:hover {
+  color: var(--clr-accent-100);
+}
+
+/*=============== Lay out ==============*/
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+.skilled-logo {
+  width: 90px;
+}
+
+header {
+  overflow: hidden;
+  position: relative;
+}
+
+.banner {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.hero {
+  padding-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background: linear-gradient(180deg, #FFF, #F0F1FF);
+  padding: 1em 0 3em;
+}
+
+.teaser {
+  background: linear-gradient(to bottom, var(--clr-grade-502), var(--clr-grade-901));
+  padding: 1.5em;
+  border-radius: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.5em;
+  column-gap: 1.5em;
+}
+
+.card {
+  height: 100%;
+  background: var(--clr-neutral-100);
+  padding: 1.5em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .link {
+  margin-top: auto;
+}
+
+.card img {
+  margin-top: -3em;
+  align-self: flex-start;
+}
+
+.card>*:not(.link) {
+  margin-bottom: 1.25em;
+}
+
+footer {
+  background: var(--clr-neutral-300);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/*============== Media Query ===============*/
+
+@media all and (min-width: 500px) {
+
+  .hero {
+    flex-direction: row;
+    padding-top: 5em;
+    padding-bottom: 15em;
+
+  }
+
+  .hero>* {
+    flex-basis: 50%;
+  }
+
+  .hero_img {
+    position: absolute;
+    top: calc(10% - 20vw);
+    left: calc(40vw);
+    z-index: -10;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media all and (min-width: 800px) {
+  :root {
+    --fs-XL: 56px;
+    --fs-M: 32px;
+    --fs-S: 24px;
+    --fs-general: 18px;
+  }
+
+  .skilled-logo {
+    width: 115px;
+  }
+
+  .intro p {
+    width: 80%;
+  }
+
+  .hero_img {
+    top: calc(10% - 20vw);
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
