@@ -80,7 +80,7 @@ It was excruciatingly difficult to fit the hero image at the right place across 
 
 ### Useful resources
 
-- [Responsive Images 101](https://cloudfour.com/thinks/responsive-images-101-definitions/) - This helped me to manage the plethora of possibilities inside the `picture` element between **art direction**, **screen resolution** and more. Lenghty article, but worth any second you invest in.
+- [Responsive Images 101 by Jason Grigsby](https://cloudfour.com/thinks/responsive-images-101-definitions/) Published on March 16th, 2015 - This helped me to manage the plethora of possibilities inside the `picture` element between **art direction**, **screen resolution** and more. Lenghty article, but worth any second you invest in.
 
 ## Author
 
