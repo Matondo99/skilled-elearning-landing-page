@@ -46,7 +46,7 @@ Users should be able to:
 - Mobile-first workflow
 ### What I learned
 
-Learned how to apply the `picture` element in a really complex use case. It seems to work until I set desktop site on a mobile screen, then it screws my design. Still lot to learn. 
+- Learned how to apply the `picture` element in a really complex use case. It seems to work until I set desktop site on a mobile screen, then it screws my design. Still lot to learn. 
 
 ```html
 <picture>
@@ -72,6 +72,27 @@ Learned how to apply the `picture` element in a really complex use case. It seem
         srcset="assets/image-hero-mobile@2x.png 2x">
 </picture>
 ```
+- Instead of changing every single color links' colors for hover purposes, I just wrapped a pale veil over every button. The challenge was to apply pseudo-class to pseudo-element:
+
+```css
+.btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255, .0);
+  transition: background-color 300ms ease-out 100ms;
+}
+
+.btn:focus::before,
+.btn:hover::before  {
+  background-color: rgba(255,255,255, 0.42);
+}
+```
 ### Issue to fix
 
 It was excruciatingly difficult to fit the hero image at the right place across all screen sizes with absolute position. As a result:
@@ -81,6 +102,8 @@ It was excruciatingly difficult to fit the hero image at the right place across 
 ### Useful resources
 
 - [Responsive Images 101 by Jason Grigsby](https://cloudfour.com/thinks/responsive-images-101-definitions/) Published on March 16th, 2015 - This helped me to manage the plethora of possibilities inside the `picture` element between **art direction**, **screen resolution** and more. Lenghty article, but worth any second you invest in.
+
+- [How to make a hover effect for pseudo elements?](https://stackoverflow.com/questions/8874326/how-to-make-a-hover-effect-for-pseudo-elements) - You can change the pseudo-element based on hover of the parent, **JSFiddle DEMO**.
 
 ## Author
 
