@@ -7,9 +7,9 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-    - [Desktop View](#Desktop-View)
-    - [Tablet View](#Tablet-View)
-    - [Mobile View](#Mobile-View)
+    - [Desktop View](#desktop-view)
+    - [Tablet View](#tablet-view)
+    - [Mobile View](#mobile-view)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -30,16 +30,19 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop View
+
 ![Desktop-Screenshot](./solution/Desktop-Screenshot.png)
 
 ___
 
 #### Tablet View
+
 ![Tablet-Screenshot](./solution/Tablet-Screenshot.png)
 
-***
+___
 
 #### Mobile View
+
 ![Mobile-Screenshot](./solution/Mobile-Screenshot.png)
 
 ### Links
@@ -56,9 +59,10 @@ ___
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
 ### What I learned
 
-- Learned how to apply the `picture` element in a really complex use case. It seems to work until I set desktop site on a mobile screen, then it screws my design. Still lot to learn. 
+- Learned how to apply the `picture` element in a really complex use case. It seems to work until I set desktop site on a mobile screen, then it screws my design. Still lot to learn.
 
 ```html
 <picture>
@@ -84,6 +88,7 @@ ___
         srcset="assets/image-hero-mobile@2x.png 2x">
 </picture>
 ```
+
 - Instead of changing every single color links' colors for hover purposes, I just wrapped a pale veil over every button. The challenge was to apply pseudo-class to pseudo-element:
 
 ```css
@@ -105,9 +110,11 @@ ___
   background-color: rgba(255,255,255, 0.42);
 }
 ```
+
 ### Issue to fix
 
 It was excruciatingly difficult to fit the hero image at the right place across all screen sizes with absolute position. As a result:
+
 - header bottom padding is huge on landscape view;
 - mobile hero image is displayed on mobile screen when desktop site is set.
 
