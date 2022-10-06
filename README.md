@@ -7,6 +7,9 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+    - [Desktop View](#Desktop-View)
+    - [Tablet View](#Tablet-View)
+    - [Mobile View](#Mobile-View)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -26,8 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
+#### Desktop View
 ![Desktop-Screenshot](./solution/Desktop-Screenshot.png)
+
+#### Tablet View
 ![Tablet-Screenshot](./solution/Tablet-Screenshot.png)
+
+#### Mobile View
 ![Mobile-Screenshot](./solution/Mobile-Screenshot.png)
 
 ### Links
