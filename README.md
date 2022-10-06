@@ -31,10 +31,10 @@ Users should be able to:
 
 #### Desktop View
 ![Desktop-Screenshot](./solution/Desktop-Screenshot.png)
-
+============================================================
 #### Tablet View
 ![Tablet-Screenshot](./solution/Tablet-Screenshot.png)
-
+===
 #### Mobile View
 ![Mobile-Screenshot](./solution/Mobile-Screenshot.png)
 
