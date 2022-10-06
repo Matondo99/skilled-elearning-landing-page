@@ -24,20 +24,20 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- [x] View the optimal layout depending on their device's screen size
+- [x] See hover states for interactive elements
 
 ### Screenshot
 
 #### Desktop View
 ![Desktop-Screenshot](./solution/Desktop-Screenshot.png)
 
-============================================================
+___
 
 #### Tablet View
 ![Tablet-Screenshot](./solution/Tablet-Screenshot.png)
 
-===
+***
 
 #### Mobile View
 ![Mobile-Screenshot](./solution/Mobile-Screenshot.png)
